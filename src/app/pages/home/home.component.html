@@ -1,0 +1,113 @@
+<div class="main">
+    <div class="row first">
+        <div class="card">
+            <div class="col">
+                <img src="/selfie.png" alt="Foto de Kauã Andrade Pacheco">
+            </div>
+            <div class="col">
+                <h2>Kauã Andrade Pacheco</h2>
+                <span>
+                    Meu nome é Kauã, tenho 20 anos de idade, sou Desenvolvedor Fullstack, e estou no 5º semestre do meu bacharelado em Sistemas de Informação.
+                </span>
+                <button (click)="scrollToDiv()">Conheca minha trajetória</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div #journey class="row gradient" id="journey">
+        <h3> <strong> <i>Vida</i> </strong> Acadêmica </h3>
+        <div class="card shadow">
+            <div class="col">
+                <img src="/IPS_ETEC-4.jpg" alt="Foto da Etec Guarulhos">
+            </div>
+            <div class="col">
+                <span>
+                    Minha jornada na área de tecnologia começou em 2020, quando ingressei no curso técnico de desenvolvimento de sistemas
+                    na ETEC de Guarulhos, onde tive meu primeiro contato com a programação. Aprendi sobre e utilizei diversas tecnologias,
+                    como HTML, CSS, JavaScript, C# e MySQL, e também desenvolvi aplicações com frameworks como React e React Native.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row gradient">
+        <div class="card reverse shadow">
+            <div class="col">
+                <img src="/eniac.jpg" alt="Foto da Faculdade Eniac">
+            </div>
+            <div class="col">
+                <span>
+                    Saindo da ETEC, ingressei no curso de Sistemas de Informação na Faculdade Eniac, onde estou atualmente no 5º semestre. 
+                    Na Eniac, aprofundei meus conhecimentos em programação, e aprendi sobre diversas outras áreas da tecnologia, metodologias
+                    ágeis, e também sobre a importância da comunicação e do trabalho em equipe. Tive contato com tecnologias como Java, PHP,
+                    .NET, Node.js, Typescript, Angular, e também com metodologias ágeis como Scrum e Kanban.
+                </span>
+            </div>
+        </div>
+        <h3></h3>
+    </div>
+    <div class="row experience" id="professional">
+        <h3> <strong> Experiências </strong> <br> Profissionais</h3>
+        <div class="card experience">
+            <div class="col small">
+                <img src="/grupo_finger_digital_logo.jfif" alt="Logo da empresa Finger Digital" srcset="">
+                <span>Finger digital</span>
+                <span>Desenvolvedor Fullstack</span>
+                <span>08/2023 - 02/2025</span>
+            </div>
+            <div class="col large">
+                <span>
+                    Trabalhei na empresa de transformação digital Finger, onde atuava como desenvolvedor fullstack,
+                    desenvolvendo aplicações web, utilizando tecnologias como Angular, Rxjs e Typescipt. Também 
+                    desenvolvi aplicações back-end e APIs, utilizando Node.js, Nest, TypeORM, SQLServer e PostgreSQL.
+                    Tive contato com metodologias ágeis, como o Scrum, com tecnologias em nuvem, como o Google Firebase
+                    e trabalhei em equipe, utilizando o Git para versionamento de código e Slack. 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row last" id="technologies">
+        <h3> <strong> Tecnologias </strong></h3>
+        <p-carousel [value]="technologies" [numVisible]="5" [numScroll]="1" [circular]="true" class="carousel" autoplayInterval="2000">
+            <ng-template let-tech #item>
+                <div class="technology">
+                    <div class="image">
+                        <img src="/{{ tech.image }}" alt="Logo da tecnologia {{ tech.name }}">
+                    </div>
+                    <div class="info">
+                        <span> <strong> {{ tech.name }} </strong></span>
+                        <span>Experiência {{tech.expType}}</span>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+        <div class="last-row">
+            <div class="col">
+                <h3> <strong> Projetos </strong> Pessoais</h3>
+                <div class="project">
+                    <div class="image">
+                        <img src="/pokecards.png" alt="Screenshot do projeto Pokecards">
+                    </div>
+                    <span>Pokecards</span>
+                    <button (click)="openProject()">visite agora!</button>
+                </div>
+            </div>
+            <div class="col">
+                <h3> <strong> Redes </strong> Sociais</h3>
+
+                <div class="socials">
+                    <div class="social">
+                        <img src="/linkedin.png" alt="logo do Linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/kau%C3%A3-andrade-pacheco-360675226/">Linkedin</a>
+                    </div>
+                    <div class="social">
+                        <img src="/github.png" alt="Logo do Github">
+                        <a target="_blank" href="https://github.com/Kaappoo">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
