@@ -244,6 +244,8 @@
             display: block;
             width: 80%;
             margin-bottom: 6rem;
+            max-height: 12rem;
+            overflow: hidden;
 
             .technology{
                 display: flex;
