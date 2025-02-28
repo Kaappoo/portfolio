@@ -28,6 +28,12 @@ export class HomeComponent {
   ngOnInit() {
 
   }
+
+  carouselResposinveOptions = [
+    // {breakpoint: '320px', numVisible: 1, numScroll: 1},
+    {breakpoint: '425px', numVisible: 1, numScroll: 1},
+    {breakpoint: '768px', numVisible: 3, numScroll: 3},
+  ]
   
   
   scrollToDiv() {

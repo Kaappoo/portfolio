@@ -44,3 +44,15 @@
         }
     }
 }
+@media (max-width: 375px){
+    .main{
+        nav{
+            .nav-item{
+                button{
+                    font-size: 0.8rem;
+                }
+                padding: 0.1rem 0rem;
+            }
+        }
+    }
+}

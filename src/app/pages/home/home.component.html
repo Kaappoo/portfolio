@@ -7,7 +7,7 @@
             <div class="col">
                 <h2>Kauã Andrade Pacheco</h2>
                 <span>
-                    Meu nome é Kauã, tenho 20 anos de idade, sou Desenvolvedor Fullstack, e estou no 5º semestre do meu bacharelado em Sistemas de Informação.
+                    Tenho 20 anos de idade, sou Desenvolvedor Fullstack, e estou no 5º semestre do meu bacharelado em Sistemas de Informação.
                 </span>
                 <button (click)="scrollToDiv()">Conheca minha trajetória</button>
             </div>
@@ -69,7 +69,7 @@
 
     <div class="row last" id="technologies">
         <h3> <strong> Tecnologias </strong></h3>
-        <p-carousel [value]="technologies" [numVisible]="5" [numScroll]="1" [circular]="true" class="carousel" autoplayInterval="2000">
+        <p-carousel [value]="technologies" [numVisible]="5" [numScroll]="1" [circular]="true" class="carousel" autoplayInterval="2000" [responsiveOptions]="carouselResposinveOptions">
             <ng-template let-tech #item>
                 <div class="technology">
                     <div class="image">
